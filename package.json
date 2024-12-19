@@ -68,7 +68,7 @@
     "gulp": "^4.0.2",
     "load-grunt-config": "3.0.1",
     "load-grunt-tasks": "5.1.0",
-    "madge": "^3.6.0",
+    "madge": "^4.0.1",
     "mocha": "^6.2.2",
     "webpack": "^4.41.2"
   }
