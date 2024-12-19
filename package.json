@@ -40,13 +40,16 @@
     "src-files": "cat .srcignore .gitignore | sed -e 's/\\(.*\\)/-not -path \"*\\1*\" /' | xargs find . -type f ",
     "src-loc": "cat .gitignore | sed -e 's/\\(.*\\)/-not -path \"*\\1*\" /' | xargs find ./ -type f -not -path '*.log' | xargs cat | grep -v '^\\s*$' | wc -l | awk '{print $1}'",
     "dep-local": "echo node_modules/* | xargs basename | sort -u | awk '{print $1}'",
-    "dep-local-all": "find node_modules/ -iname node_modules | xargs /bin/ls -w1 | grep -v '^$' | grep -v 'node_modules' | sort -u | awk '{print $1}'"
+    "dep-local-all": "find node_modules/ -iname node_modules | xargs /bin/ls -w1 | grep -v '^$' | grep -v 'node_modules' | sort -u | awk '{print $1}'",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "js-yaml": "^3.13.1",
     "lodash": "^4.17.15",
     "uuid": "^3.3.3",
-    "source-map-support": "^0.5.16"
+    "source-map-support": "^0.5.16",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-loader": "^8.0.6",
@@ -71,5 +74,6 @@
     "madge": "^3.6.0",
     "mocha": "^6.2.2",
     "webpack": "^4.41.2"
-  }
+  },
+  "snyk": true
 }
