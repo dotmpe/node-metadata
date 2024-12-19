@@ -64,7 +64,7 @@
     "grunt-exec": "^3.0.0",
     "grunt-jasmine-node-coffee": "^0.1.4",
     "grunt-mocha-test": "^0.13.3",
-    "grunt-yamllint": "0.2.0",
+    "grunt-yamllint": "0.3.0",
     "gulp": "^4.0.2",
     "load-grunt-config": "3.0.1",
     "load-grunt-tasks": "5.1.0",
