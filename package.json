@@ -69,7 +69,7 @@
     "load-grunt-config": "3.0.1",
     "load-grunt-tasks": "5.1.0",
     "madge": "^3.6.0",
-    "mocha": "^6.2.2",
+    "mocha": "^9.0.3",
     "webpack": "^4.41.2"
   }
 }
